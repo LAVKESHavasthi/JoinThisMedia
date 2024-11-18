@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="wikipedia.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+      <div class="logo-section">
+            <img src="logo.png" alt="Simple Wiki Logo" id="logo" width="100">
+        </div>
+        <h1>wikipedia lite</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <!-- Search Results -->
+    <main>
+        <h2>Search Results</h2>
+        <div id="searchResults"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p><b>&copy;2024</b> All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Handle search query
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get('query');
+        const searchResults = document.getElementById('searchResults');
+
+        // Example list of articles (updated to include the 4th article)
+        const articles = [
+            { title: "Lord Shiva", link: "lordshiva.html" },
+            { title: "Lord Ganesha", link: "lordGanesha.html" },
+            { title: "Lord Vishnu", link: "lordVishnu.html" },
+            { title: "Lord Bramha", link: "Bramha.html" },
+            { title: "Lord Rama", link: "lordrama.html" },
+            { title: "Lord Krishna", link: "lordkrishna.html" },<!-- New article added here -->
+        ];
+
+        // Filter and display search results
+        const filteredResults = articles.filter(article => article.title.toLowerCase().includes(query.toLowerCase()));
+
+        if (filteredResults.length > 0) {
+            filteredResults.forEach(article => {
+                searchResults.innerHTML += `<div><h3><a href="${article.link}">${article.title}</a></h3></div>`;
+            });
+        } else {
+            searchResults.innerHTML = '<p>No results found.</p>';
+        }
+    </script>
+    <h2> Thanx for visiting our WIKIPEDIA LITE website</h2>
+
+</body>
+</html>
