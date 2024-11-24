@@ -59,11 +59,22 @@ button {
     color: #555;
 }
 
-nav {
-    margin-top: 20px;
+#suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background: white;
+    width: 300px;
+    border: 1px solid #ccc;
+    z-index: 10;
 }
 
-nav a {
-    text-decoration: none;
-    color: #2c3e50;
+#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions li:hover {
+    background-color: #f0f0f0;
 }
