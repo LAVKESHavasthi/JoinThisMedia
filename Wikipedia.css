@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4;
 }
 
 header {
@@ -62,3 +62,22 @@ button {
 #suggestionBox li:hover {
     background-color: #f0f0f0;
 }
+/* Banner Slider */
+.banners {
+    margin: 20px 0;
+}
+
+.banner-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+}
+
+.banner-slider img {
+    max-height: 150px;
+    border-radius: 5px;
+}
+.sphere-img {
+        border-radius: 50%;
+    }
