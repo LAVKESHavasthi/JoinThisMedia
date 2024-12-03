@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 37, title: "Srinivasa Ramanujan" },
         { id: 38, title: "Tata Empire" },
         { id: 39, title: "The Way Of Programming W Book" },
+        { id: 40, title: "Rules For Nature Advanced Book" },
   
         
     ];
