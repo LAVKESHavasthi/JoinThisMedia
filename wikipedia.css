@@ -1,4 +1,4 @@
-/* Basic styles for the wiki pages */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -236,4 +236,4 @@ button {
         table th {
             background-color: #3498db;
             color: white;
-        }
+}
