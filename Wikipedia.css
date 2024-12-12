@@ -9,6 +9,12 @@ body {
     background-attachment: fixed; /* Keeps the background stable */
     background-position: center; /* Centers the image */
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
 
 
 header .brand-name {
@@ -103,7 +109,7 @@ button {
         }
         .profile-details p {
             font-size: 16px;
-            color: #7f8c8d;
+            color: white;
             line-height: 1.6;
         }
         .social-links a {
