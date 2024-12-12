@@ -27,6 +27,41 @@ header .brand-name {
     margin: 0;
 }
 
+/* Fixed Icons Container */
+.fixed-icons {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* Individual Icon Style */
+.fixed-icons .icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fixed-icons .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover Effects */
+.fixed-icons .icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 
 footer {
     text-align: center;
