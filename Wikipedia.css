@@ -123,7 +123,7 @@ button {
 .sphere-img {
         border-radius: 50%;
     }
-.profile-section {
+}.profile-section {
   display: flex; /* Aligns the left and right sections horizontally */
   gap: 20px;
 }
@@ -132,6 +132,8 @@ button {
   display: flex;
   flex-direction: column; /* Stacks image and short info vertically */
   align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  height: 100vh; /* Ensures the content is centered in the full height of the viewport */
 }
 
 .profile-left img {
