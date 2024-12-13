@@ -123,9 +123,6 @@ button {
 .sphere-img {
         border-radius: 50%;
     }
-}.profile-section {
-  display: flex; /* Aligns the left and right sections horizontally */
-  gap: 20px;
 }
 
 .profile-left {
